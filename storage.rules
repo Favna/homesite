@@ -1,7 +1,3 @@
-function isSignedIn() {
-  return request.auth != null;
-}
-
 service firebase.storage {
   match /b/{bucket}/o {
     match /{allPaths=**} {
