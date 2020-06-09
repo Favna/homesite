@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
-import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL } from '@util/constants';
+import { CONVERTBOT_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
@@ -18,7 +18,7 @@ export class ConvertbotComponent implements OnInit {
     buttons: [
       {
         text: 'Download ConvertBot',
-        url: `${ASSET_BASE_PATH}/website-dist/ConvertBot.exe`,
+        url: `https://cdn.favware.tech/binaries/convertbot.exe`,
         color: 'primary',
         outer: true
       },

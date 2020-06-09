@@ -1,7 +1,6 @@
 import { environment } from '../environments/environment';
 
-export const ASSET_BASE_PATH = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com';
-export const DISCORD_SERVER_URL = 'https://www.discord.gg/sguypX8';
+export const DISCORD_SERVER_URL = 'https://join.favware.tech';
 export const GITHUB_PROFILE = 'https://github.com/favna';
 export const TWITTER_PROFILE = 'https://twitter.com/favna_';
 export const COMMON_EMAIL = 'support@favware.tech';

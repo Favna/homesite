@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
-import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL } from '@util/constants';
+import { CATCHCALC_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
@@ -18,7 +18,7 @@ export class CatchcalcComponent implements OnInit {
     buttons: [
       {
         text: 'Download CatchCalc',
-        url: `${ASSET_BASE_PATH}/website-dist/catchcalc.jar`,
+        url: `https://cdn.favware.tech/binaries/catchcalc.jar`,
         color: 'primary',
         outer: true
       },

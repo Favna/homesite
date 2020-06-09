@@ -3,14 +3,10 @@
     "predeploy": "npm --prefix \"$RESOURCE_DIR\" run build"
   },
   "hosting": {
-    "site": "favware",
+    "site": "data-sunlight-146313",
     "public": "dist/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
-      {
-        "source": "**/!(api)",
-        "function": "favware"
-      },
       {
         "source": "/api{,/**}",
         "run": {

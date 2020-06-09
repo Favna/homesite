@@ -1,5 +1,5 @@
 <!--
-For support questions please join the Discord server: https://favware.tech/redirect/server
+For support questions please join the Discord server: https://join.favware.tech
 
 This issue tracker is only for bug reports and enhancement suggestions. You won't receive any basic help here.
 -->

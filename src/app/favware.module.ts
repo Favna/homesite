@@ -5,7 +5,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { CardActionCasePipe } from '@pipes/CardActionCase';
 import { ExtractTextPipe } from '@pipes/ExtractText';
 import { MatIconService } from '@services/mat-icon.service';
@@ -66,16 +65,13 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     SkyraComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'favware' }),
+    BrowserModule,
     HttpClientModule,
     FavwareRoutingModule,
     MaterialModule,
     LayoutModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production
-    }),
     BrowserAnimationsModule,
     MarkdownModule.forRoot({
       markedOptions: {

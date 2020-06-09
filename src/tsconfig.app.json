@@ -6,9 +6,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "angularCompilerOptions": {
-    "enableIvy": true
-  },
   "include": ["./**/*.ts"],
   "exclude": ["test.ts", "**/*.spec.ts", "assets/code/*.ts"]
 }

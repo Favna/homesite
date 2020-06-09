@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import {
-  ASSET_BASE_PATH,
   CATCHCALC_GITHUB_URL,
   CONTACT_MAIL,
   CONVERTBOT_GITHUB_URL,
@@ -151,7 +150,7 @@ export class HomeComponent implements OnInit {
         actions: [
           {
             label: 'download',
-            link: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.jar`,
+            link: `https://cdn.favware.tech/binaries/SEEDChecker.jar`,
             outer: true
           },
           { label: 'website', link: '/seedchecker', outer: false },
@@ -169,7 +168,7 @@ export class HomeComponent implements OnInit {
         actions: [
           {
             label: 'download',
-            link: `${ASSET_BASE_PATH}/website-dist/ConvertBot.exe`,
+            link: `https://cdn.favware.tech/binaries/convertbot.exe`,
             outer: true
           },
           { label: 'website', link: '/convertbot', outer: false },
@@ -187,7 +186,7 @@ export class HomeComponent implements OnInit {
         actions: [
           {
             label: 'download',
-            link: `${ASSET_BASE_PATH}/website-dist/catchcalc.jar`,
+            link: `https://cdn.favware.tech/binaries/catchcalc.jar`,
             outer: true
           },
           { label: 'website', link: '/catchcalc', outer: false },
@@ -205,12 +204,12 @@ export class HomeComponent implements OnInit {
         actions: [
           {
             label: 'windows',
-            link: `${ASSET_BASE_PATH}/website-dist/tavawindows.7z`,
+            link: `https://cdn.favware.tech/binaries/tavawindows.7z`,
             outer: true
           },
           {
             label: 'macos',
-            link: `${ASSET_BASE_PATH}/website-dist/tavamac.7z`,
+            link: `https://cdn.favware.tech/binaries/tavamac.7z`,
             outer: true
           },
           { label: 'website', link: '/tava', outer: false }

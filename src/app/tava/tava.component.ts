@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
 import { SeoService, SeoTags } from '@services/seo.service';
-import { ASSET_BASE_PATH, TAVA_SITE } from '@util/constants';
+import { TAVA_SITE } from '@util/constants';
 import { IPrimaryTile, ITavaTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 
@@ -18,13 +18,13 @@ export class TavaComponent implements OnInit {
     buttons: [
       {
         text: 'Download Windows Version',
-        url: `${ASSET_BASE_PATH}/website-dist/tavawindows.7z`,
+        url: `$https://cdn.favware.tech/binaries/tavawindows.7z`,
         color: 'primary',
         outer: true
       },
       {
         text: 'Download MacOS Version',
-        url: `${ASSET_BASE_PATH}/website-dist/tavamac.7z`,
+        url: `https://cdn.favware.tech/binaries/tavamac.7z`,
         color: 'primary',
         outer: true
       },
